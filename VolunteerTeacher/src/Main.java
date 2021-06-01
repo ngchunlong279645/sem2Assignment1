@@ -11,33 +11,34 @@ public class Main {
 		organisation.setContactNum("0332917865");
 		organisation.setFBLink("https://www.facebook.com/SOLS247/");
 		organisation.printInfo();	
-		
-		Advertisement latestNews = new Advertisement("World Book and Copyright Day",10);
-		latestNews.printInfo();
-		latestNews.donationLink();
-		latestNews.eventLink();
 		System.out.println("");
-			
-		EventDescription event1 = new EventDescription();
-		event1.setEventName("World Book and Copyright Day");
-		event1.setDate("27-6-2021");
-		event1.setTime(3);
-		event1.setLocation("Setia City Mall");
-		event1.setPrice(3);
-		System.out.println("Event \t\t: "+event1.getEventname());
-		System.out.println("Date \t\t: "+event1.getDate());
-		System.out.println("Time \t\t: "+event1.getTime()+"PM");
-		System.out.println("Location \t: "+event1.getLocation());
-		System.out.println("Entrance Fee \t: "+event1.getPrice()+"\n");
 		
-		System.out.println("Select Option : 1-Event Register\n\t\t"
-											+ "2-Admin Page\n\t\t");
+		System.out.println("Select Option : 1-Participant\n\t\t"
+											+ "2-Admin \n\t\t");
 	
 		do {
 			System.out.print("Enter option    : ");
 			int option = scan.nextInt();
 			
 			if(option==1) {
+				Advertisement latestNews = new Advertisement("World Book and Copyright Day",10);
+				latestNews.printInfo();
+				latestNews.donationLink();
+				latestNews.eventLink();
+				System.out.println("");
+					
+				EventDescription event1 = new EventDescription();
+				event1.setEventName("World Book and Copyright Day");
+				event1.setDate("27-6-2021");
+				event1.setTime(3);
+				event1.setLocation("Setia City Mall");
+				event1.setPrice(3);
+				System.out.println("Event \t\t: "+event1.getEventname());
+				System.out.println("Date \t\t: "+event1.getDate());
+				System.out.println("Time \t\t: "+event1.getTime()+"PM");
+				System.out.println("Location \t: "+event1.getLocation());
+				System.out.println("Entrance Fee \t: "+event1.getPrice()+"\n");
+				
 				Participant ppl = new Participant("World Book and Copyright Day");
 				ppl.printInfo();
 				double price=ppl.getPrice();
