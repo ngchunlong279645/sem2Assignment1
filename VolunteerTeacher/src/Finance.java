@@ -6,26 +6,14 @@ public class Finance {
 	private double totalDonation,totalExpenses;
 	private double bill,eventExpenses,rentalFee,otherExpenses;
 	
-	public Finance(String month){
+	public Finance(String month){	//constructor with 1 argument
 		this.month=month;
 	}
 	
 	
-	public Finance(double price, int quantity) {		
+	public Finance(double price, int quantity) {	//constructor with 2 argument
 		this.price=price;
 		this.quantity=quantity;
-		calTotalPrice(price, quantity);
-	
-	}
-	
-	public Finance (double bill, double eventExpenses, double rentalFee, double otherExpenses) {		
-		this.bill=bill;
-		this.eventExpenses=eventExpenses;
-		this.rentalFee=rentalFee;
-		this.otherExpenses=otherExpenses;
-	}
-	
-	public void  calTotalPrice(double price, int quantity) {	
 		if(quantity<=2) {
 			double totalPrice=price*quantity;
 			System.out.println("Quantity\t: "+quantity);
@@ -48,6 +36,14 @@ public class Finance {
 			System.out.println("Discount\t: "+discount*100+"%");
 			System.out.println("Total Price\t: RM "+totalPrice);
 		}	
+	
+	}
+	
+	public Finance (double bill, double eventExpenses, double rentalFee, double otherExpenses) {	//constructor with 4 argument	
+		this.bill=bill;
+		this.eventExpenses=eventExpenses;
+		this.rentalFee=rentalFee;
+		this.otherExpenses=otherExpenses;
 	}
 	
 	public double calTotalExpenses() {

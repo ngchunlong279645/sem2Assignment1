@@ -6,7 +6,7 @@ public class VolunteerTeacherOrganisation {
 	private String fbLink;
 	
 	
-	public VolunteerTeacherOrganisation(String organisationName) {
+	public VolunteerTeacherOrganisation(String organisationName) {		//constructor with 1 argument
 		this.organisationName=organisationName;
 		System.out.println("Welcome to "+ organisationName +" Organization");
 		System.out.println("Our organization provides free education and"
