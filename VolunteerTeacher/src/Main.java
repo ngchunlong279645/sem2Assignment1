@@ -41,7 +41,7 @@ public class Main {
 				ppl.printInfo();
 				double price=ppl.getPrice();
 				int quantity=ppl.getQuantity();
-				Finance countTotalPrice = new Finance(price,quantity);		//constructor with 2 argument
+				Finance calTotalPrice = new Finance(price,quantity);		//constructor with 2 argument
 				System.out.println("");
 				System.out.println("Do you want to donate ?? 1-yes 2-no");
 				int selection=scan.nextInt();
@@ -55,6 +55,7 @@ public class Main {
 			else {
 				System.out.println("");
 				System.out.println("Welcome Back Admin ");
+				
 				Finance report = new Finance ("June");		//constructor with 1 argument
 				Finance expenses = new Finance(245,345,1420,590);		//constructor with 4 argument
 				report.setTotalDonation(27968.90);
