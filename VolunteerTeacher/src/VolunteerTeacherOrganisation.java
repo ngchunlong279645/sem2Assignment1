@@ -10,8 +10,8 @@ public class VolunteerTeacherOrganisation {
 		this.organisationName=organisationName;
 		System.out.println("Welcome to "+ organisationName +" Organization");
 		System.out.println("Our organization provides free education and"
-				+ "social empowerment programmes to underserved communities"
-				+ "all around Malaysia.\n");
+				+ " social empowerment programmes to underserved communities"
+				+ " all around Malaysia.\n");
 		System.out.println("Our organization vision : "+vision());
 		System.out.println("Our organization mission : "+mission());
 		
